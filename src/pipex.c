@@ -6,7 +6,7 @@
 /*   By: gualvare <gualvare@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 16:13:37 by gualvare          #+#    #+#             */
-/*   Updated: 2024/09/04 15:14:57 by gualvare         ###   ########.fr       */
+/*   Updated: 2024/09/06 15:38:51 by gualvare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "pipex.h"
@@ -49,7 +49,7 @@ void	init_pipex(t_pipex *pipex, char **argv, char **env)
 	pipex->path1 = find_path(pipex->cmd1[0], env);
 	pipex->path2 = find_path(pipex->cmd2[0], env);
 	if (!pipex->path1 || !pipex->path2)
-		handle_exit(NO_PATH);
+		handle_exit(NOT_FOUND);
 }
 
 int	main(int argc, char **argv, char **env)

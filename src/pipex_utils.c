@@ -6,7 +6,7 @@
 /*   By: gualvare <gualvare@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 18:40:12 by gualvare          #+#    #+#             */
-/*   Updated: 2024/09/04 14:58:04 by gualvare         ###   ########.fr       */
+/*   Updated: 2024/09/06 15:40:02 by gualvare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "pipex.h"
@@ -31,7 +31,7 @@ int	handle_error(char *str)
 
 void	handle_exit(char *str)
 {
-	perror(str);
+	ft_putstr_fd(str, 2);
 	exit(EXIT_FAILURE);
 }
 
