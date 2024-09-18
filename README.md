@@ -14,7 +14,6 @@ This will execute the commands as if you were running:
 ```
 < infile command1 | command2 > outfile
 ```
-It accepts four arguments: two file names and two shell commands, and executes them in a pipeline manner.
 
 ## Project Arquitecture
 
